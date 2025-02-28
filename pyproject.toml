@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bootcamp-ml-framework"
+version = "0.1.0"
+description = "This is the bootcampl ml framework tool"
+authors = ["omarcharif <omarcharif83@gmail.com>"]
+license = "GPL v2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pandas = "^2.2.3"
+matplotlib = "^3.10.1"
+scikit-learn = "^1.6.1"
+seaborn = "^0.13.2"
+tensorflow = "^2.18.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
