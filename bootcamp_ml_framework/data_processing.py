@@ -1,4 +1,5 @@
-import pandas as pd 
+import pandas as pd
+from typing import Union
 
 def column_mean(df: pd.DataFrame, column_name: str) -> float:
     """
@@ -19,7 +20,7 @@ def column_mean(df: pd.DataFrame, column_name: str) -> float:
     return df[column_name].mean()
 
 
-def multiply_dataframe(df: pd.DataFrame, multiplier: int) -> pd.DataFrame:
+def multiply_dataframe(df: pd.DataFrame, multiplier: Union[float, int]) -> pd.DataFrame:
     """Multiplies all numerical values in a DataFrame by a given integer."""
     if not isinstance(multiplier, (int, float)):
         raise ValueError("Multiplier must be a number.")
